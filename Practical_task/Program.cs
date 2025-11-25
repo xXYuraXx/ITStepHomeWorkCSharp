@@ -1,107 +1,68 @@
 ﻿namespace Practical_task
 {
-    class Freezer
+    class Worker
     {
-        public static int FreezerCount { get; private set; }
-        public static int Voltage { get; } = 220;
+        private string _lastName;
+        private string _initials;
+        private int _age;
+        private decimal _salary;
+        private DateTime _hireDate;
 
-
-        public string Model { get; set; }
-
-        public string Color { get; set; }
-
-        private double _minTemperature;
-        public double MinTemperature
+        public string LastName
         {
-            get { return _minTemperature; }
-            set {
-                if (value < -30 || value > 0)
-                {
-                    _minTemperature = -18;
-                    Console.WriteLine("Invalid min temperature");
-                }
-                else
-                {
-                    _minTemperature = value;
-                }
-            }
-        }
-
-        private double _maxTemperature;
-        public double MaxTemperature
-        {
-            get { return _maxTemperature; }
+            get { return _lastName; }
             set
             {
-                if (value < -30 || value > 0)
-                {
-                    _maxTemperature = -7;
-                    Console.WriteLine("Invalid max temperature");
-                }
-                else
-                {
-                    _maxTemperature = value;
-                }
+                if (string.IsNullOrEmpty(value))
+                    throw new ArgumentException("Last name can't be null or empty");
+                _lastName = value;
             }
         }
 
-        private double _height;
-        public double Height
+        public string Initials
         {
-            get { return _height; }
+            get { return _initials; }
             set
             {
-                if (value < 0.5)
-                {
-                    _height = 0.5;
-                    Console.WriteLine("Invalid height");
-                }
-                else
-                {
-                    _height = value;
-                }
+                if (string.IsNullOrEmpty(value))
+                    throw new ArgumentException("Initials can't be null or empty");
+                _initials = value;
             }
         }
 
-        private double _width;
-        public double Width
+        public int Age
         {
-            get { return _width; }
+            get { return _age; }
             set
             {
-                if (value < 0.5)
-                {
-                    _width = 0.5;
-                    Console.WriteLine("Invalid width");
-                }
-                else
-                {
-                    _width = value;
-                }
+                if (value < 1 || value > 120)
+                    throw new ArgumentOutOfRangeException("Age must be between 1 and 120");
+                _age = value;
             }
         }
-
-
-        public Freezer(string model, string color, double minTemperature, double maxTemperature, double height, double width)
+        public decimal Salary
         {
-            Model = model;
-            Color = color;
-            MinTemperature = minTemperature;
-            MaxTemperature = maxTemperature;
-            Height = height;
-            Width = width;
-
-            FreezerCount++;
+            get { return _salary; }
+            set
+            {
+                if (value < 0)
+                    throw new ArgumentException("Salary can't be negative");
+                _salary = value;
+            }
         }
-
-        static Freezer()
+        public DateTime HireDate
         {
-            FreezerCount = 0;
+            get { return _hireDate; }
+            set
+            {
+                if (value > DateTime.Now)
+                    throw new ArgumentException("Hire date can't be bigger than current time");
+                _hireDate = value;
+            }
         }
-
-        public override string ToString()
+        public int GetYearsWorkExperiance()
         {
-            return $"Model: {Model}; Color: {Color}; Min Temperature: {MinTemperature}; Max Temperature: {MaxTemperature}; Height: {Height}; Width: {Width}";
+            return (DateTime.Now - _hireDate).Days / 365;
         }
     }
 
@@ -109,10 +70,51 @@
     {
         static void Main(string[] args)
         {
-            Freezer freezer1 = new Freezer("ModelA", "White", -20, -5, 1.8, 0.7);
-            Console.WriteLine(freezer1.ToString());
-            Console.WriteLine("Count of freezers: " + Freezer.FreezerCount);
-            Console.WriteLine("Voltage: " + Freezer.Voltage);
+            const int WORKER_COUNT = 5;
+            Worker[] workers = new Worker[WORKER_COUNT];
+
+            int answ;
+            Console.Write("Use template data? (1 - Yes, 0 - No): ");
+            answ = int.Parse(Console.ReadLine());
+
+            if (answ == 1)
+            {
+                workers[0] = new Worker() { LastName = "Doe", Initials = "J.D.", Age = 30, Salary = 20000, HireDate = new DateTime(2015, 11, 11) };
+                workers[1] = new Worker() { LastName = "Joe", Initials = "J.D.", Age = 35, Salary = 30000, HireDate = new DateTime(2018, 11, 11) };
+                workers[2] = new Worker() { LastName = "Aoe", Initials = "J.D.", Age = 40, Salary = 10000, HireDate = new DateTime(2010, 11, 20) };
+                workers[3] = new Worker() { LastName = "Coe", Initials = "J.D.", Age = 20, Salary = 15000, HireDate = new DateTime(2012, 11, 30) };
+                workers[4] = new Worker() { LastName = "Boe", Initials = "J.D.", Age = 15, Salary = 40000, HireDate = new DateTime(2019, 11, 11) };
+            }
+            else
+            {
+                for (int i = 0; i < WORKER_COUNT; i++)
+                {
+                    workers[i] = new Worker();
+                    Console.WriteLine($"== Enter data for worker {i + 1} ==");
+                    Console.Write("Last Name: ");
+                    workers[i].LastName = Console.ReadLine();
+                    Console.Write("Initials: ");
+                    workers[i].Initials = Console.ReadLine();
+                    Console.Write("Age: ");
+                    workers[i].Age = int.Parse(Console.ReadLine());
+                    Console.Write("Salary: ");
+                    workers[i].Salary = decimal.Parse(Console.ReadLine());
+                    Console.Write("Hire Date (YYYY-MM-DD): ");
+                    workers[i].HireDate = DateTime.Parse(Console.ReadLine());
+                }
+            }
+
+            Array.Sort(workers, (w1, w2) => string.Compare(w1.LastName, w2.LastName));
+            Console.Write("Enter minimum experiance in years: ");
+            int minExperiance = int.Parse(Console.ReadLine());
+            Console.WriteLine("== Workers with experiance greater than " + minExperiance + " years ==");
+            foreach (var worker in workers)
+            {
+                if (worker.GetYearsWorkExperiance() > minExperiance)
+                {
+                    Console.WriteLine(worker.LastName);
+                }
+            }
         }
     }
 }
