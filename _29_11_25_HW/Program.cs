@@ -397,6 +397,22 @@
             }
             Console.WriteLine("}");
         }
+
+        public GeometryFigure this[int index]
+        {
+            get
+            {
+                if (index < 0 || index >= figures.Length)
+                    throw new IndexOutOfRangeException("Index out of range");
+                return figures[index];
+            }
+            set
+            {
+                if (index < 0 || index >= figures.Length)
+                    throw new IndexOutOfRangeException("Index out of range");
+                figures[index] = value;
+            }
+        }
     }
 
 
@@ -416,7 +432,11 @@
             MultyFigure mf = new MultyFigure(tr, sq, romb, rect, par, trap, cir);
 
             mf.PrintAllFiguresInfo();
-            
+
+            int testIndex = 4;
+            Console.WriteLine($"Figure with index {testIndex}");
+            Console.WriteLine(mf[testIndex].ToString());
+
         }
     }
 }
