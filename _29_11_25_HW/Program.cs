@@ -430,6 +430,7 @@
             Trapecia trap = new Trapecia(3, 4, 5, 6, 7);
             Circle cir = new Circle(5);
             MultyFigure mf = new MultyFigure(tr, sq, romb, rect, par, trap, cir);
+            // Test
 
             mf.PrintAllFiguresInfo();
 
