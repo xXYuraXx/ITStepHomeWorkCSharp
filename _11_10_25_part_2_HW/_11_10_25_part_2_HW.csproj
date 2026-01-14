@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\_18_10_25_part_1_HW\_18_10_25_part_1_HW.csproj" />
+  </ItemGroup>
+
 </Project>
