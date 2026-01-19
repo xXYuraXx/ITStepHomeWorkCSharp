@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_08_11_25_part_3_HW_Threads
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_15_11_25_HW", "_15_11_25_HW\_15_11_25_HW.csproj", "{AFE800C2-79CA-41B6-9773-C611B99D2A82}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_29_11_25_part_2_HW", "_29_11_25_part_2_HW\_29_11_25_part_2_HW.csproj", "{367BBD8B-F32A-45A9-BA7D-57456CAC7B19}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{AFE800C2-79CA-41B6-9773-C611B99D2A82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFE800C2-79CA-41B6-9773-C611B99D2A82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFE800C2-79CA-41B6-9773-C611B99D2A82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{367BBD8B-F32A-45A9-BA7D-57456CAC7B19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{367BBD8B-F32A-45A9-BA7D-57456CAC7B19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{367BBD8B-F32A-45A9-BA7D-57456CAC7B19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{367BBD8B-F32A-45A9-BA7D-57456CAC7B19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
