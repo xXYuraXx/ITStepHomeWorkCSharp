@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_06_12_25_part_2_TCP_HW", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_06_12_25_part_2_TCP_Client_HW", "_06_12_25_part_2_TCP_Client_HW\_06_12_25_part_2_TCP_Client_HW.csproj", "{0E9067AF-8A98-426C-AA68-F9091DDEF630}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_13_12_25_part_1_Generic_HW", "_13_12_25_part_1_Generic_HW\_13_12_25_part_1_Generic_HW.csproj", "{15BB40A6-7D96-4F26-9853-71F93C3B30CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{0E9067AF-8A98-426C-AA68-F9091DDEF630}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E9067AF-8A98-426C-AA68-F9091DDEF630}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E9067AF-8A98-426C-AA68-F9091DDEF630}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15BB40A6-7D96-4F26-9853-71F93C3B30CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15BB40A6-7D96-4F26-9853-71F93C3B30CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15BB40A6-7D96-4F26-9853-71F93C3B30CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15BB40A6-7D96-4F26-9853-71F93C3B30CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
