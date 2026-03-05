@@ -39,6 +39,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityTest", "EntityTest\En
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_06_12_25_part_1_Delegates_HW", "_06_12_25_part_1_Delegates_HW\_06_12_25_part_1_Delegates_HW.csproj", "{3F8A0FEE-165A-4B69-8CD9-0FC0CCB0CAEE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_06_12_25_part_2_TCP_HW", "_06_12_25_part_2_TCP_HW\_06_12_25_part_2_TCP_HW.csproj", "{06A1CE05-CD9B-45C6-B5E7-F638CC3C92F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_06_12_25_part_2_TCP_Client_HW", "_06_12_25_part_2_TCP_Client_HW\_06_12_25_part_2_TCP_Client_HW.csproj", "{0E9067AF-8A98-426C-AA68-F9091DDEF630}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +121,14 @@ Global
 		{3F8A0FEE-165A-4B69-8CD9-0FC0CCB0CAEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F8A0FEE-165A-4B69-8CD9-0FC0CCB0CAEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F8A0FEE-165A-4B69-8CD9-0FC0CCB0CAEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06A1CE05-CD9B-45C6-B5E7-F638CC3C92F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06A1CE05-CD9B-45C6-B5E7-F638CC3C92F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06A1CE05-CD9B-45C6-B5E7-F638CC3C92F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06A1CE05-CD9B-45C6-B5E7-F638CC3C92F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E9067AF-8A98-426C-AA68-F9091DDEF630}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E9067AF-8A98-426C-AA68-F9091DDEF630}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E9067AF-8A98-426C-AA68-F9091DDEF630}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E9067AF-8A98-426C-AA68-F9091DDEF630}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
