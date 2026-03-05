@@ -125,6 +125,14 @@ namespace _13_12_25_part_1_Generic_HW
             Console.WriteLine();
             myDict.RemoveTranslate("woRd", "test");
             Console.WriteLine(myDict.ToString());
+            myDict.ChangeTranslate("apple", "яблуко", "яблучко");
+            Console.WriteLine();
+            Console.WriteLine(myDict.ToString());
+            Console.WriteLine();
+            myDict.RemoveTranslate("apple");
+            Console.WriteLine(myDict.ToString());
+            Console.WriteLine();
+            Console.WriteLine($"Пошук перекладів word : {myDict.GetTranslateString("word")}");
 
 
         }
