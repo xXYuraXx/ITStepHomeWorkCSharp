@@ -51,6 +51,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_13_12_25_part_2_TCPListene
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_20_12_25_part_1_Files_HW", "_20_12_25_part_1_Files_HW\_20_12_25_part_1_Files_HW.csproj", "{B4306985-8E10-48FA-8A74-4B8150E9E98C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_20_12_25_part_2_Http_HW", "_20_12_25_part_2_Http_HW\_20_12_25_part_2_Http_HW.csproj", "{9B7454B2-9FF8-41A1-9596-20C99660D38D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_20_12_25_part_2_HttpJSON_HW", "_20_12_25_part_2_HttpJSON_HW\_20_12_25_part_2_HttpJSON_HW.csproj", "{2BE44538-CA36-48B5-8EBE-85B864C7C3C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +157,14 @@ Global
 		{B4306985-8E10-48FA-8A74-4B8150E9E98C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4306985-8E10-48FA-8A74-4B8150E9E98C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4306985-8E10-48FA-8A74-4B8150E9E98C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B7454B2-9FF8-41A1-9596-20C99660D38D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B7454B2-9FF8-41A1-9596-20C99660D38D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B7454B2-9FF8-41A1-9596-20C99660D38D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B7454B2-9FF8-41A1-9596-20C99660D38D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BE44538-CA36-48B5-8EBE-85B864C7C3C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BE44538-CA36-48B5-8EBE-85B864C7C3C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BE44538-CA36-48B5-8EBE-85B864C7C3C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BE44538-CA36-48B5-8EBE-85B864C7C3C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
